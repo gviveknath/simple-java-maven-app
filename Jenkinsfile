@@ -1,7 +1,8 @@
 pipeline{
     agent any
     stages{
-        stage{'checkout'}{
+        stage{'checkout'}
+        {
             steps{
                 script{
                     checkout([$class: 'GitSCM', branches: [[name: 'pipeline']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/gviveknath/simple-java-maven-app.git']]])
