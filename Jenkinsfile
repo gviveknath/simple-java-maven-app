@@ -1,7 +1,8 @@
 pipeline{
     agent any
     stages{
-        stage{'checkout'}
+        stage("code checkout")
+       
         {
             steps{
                 script{
